@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pricing.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>BOOTSTRAP-PRICING TABLES</title>
+    <style>
+        body{
+            background-color: #EAE7FA;
+        }
+
+        h1{
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+            font-family: cursive;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        .pricingTable{
+            text-align: center;
+            font-family: monospace;
+            background-color: white;
+            margin: 10px 5px;
+            box-shadow: 0 0 10px rgb(17, 7, 17);
+            padding-bottom: 40px;
+            border-radius: 10px;
+        }
+        
+        .pricingTable:hover{
+            transform: scale(1.05);
+            z-index: 1;
+        }
+
+        .pricingTable .pricingTable-header{
+            padding: 40px 0;
+            background-color: rgb(245, 237, 237);
+            border-radius: 10px 10px 50% 50%;
+        }
+
+        .pricingTable:hover .pricingTable-header{
+            background-color: #ff9624;
+        }
+
+        .pricingTable .price-value{
+            font-size: 35px;
+        }
+
+        .pricingTable .month{
+            display: block;
+            font-size: 20px;
+        }
+
+        .pricingTable .heading{
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .pricingTable .pricing-content ul{
+            list-style: none;
+            padding: 0;
+            margin-bottom: 30px;
+        }
+
+        .pricingTable .pricing-content ul li{
+            line-height: 30px;
+            font-size: 18px;
+        }
+
+        .pricingTable .pricingTable-signup a{
+            display: inline-block;
+            font-size: 20px;
+            font-family: monospace;
+            color: black;
+            padding: 10px 35px;
+            border-radius: 20px;
+            background-color: gray;
+        }
+        
+        .pricingTable .pricingTable-signup a:hover{
+            box-shadow: 0 0 10px #180d0d;
+        }
+
+        .pricingTable.rosewater .heading{
+            color: #D9A1A0;
+            font-weight: bolder;
+        }
+
+        .pricingTable.rosewater .pricingTable-signup a, .pricingTable.rosewater:hover .pricingTable-header{
+            background-color: #D9A1A0;
+        }
+
+        .pricingTable.Lavender .heading{
+            color :#A58CB3;
+            font-weight: bolder;
+        }
+
+        .pricingTable.Lavender .pricingTable-signup a, .pricingTable.Lavender:hover .pricingTable-header{
+            background-color: #A58CB3;
+        }
+
+        .pricingTable.periwinkle .heading{
+            color: #838BC2;
+            font-weight: bolder;
+        }
+
+        .pricingTable.periwinkle .pricingTable-signup a, .pricingTable.pricingTable.periwinkle:hover .pricingTable-header{
+            background-color: #838BC2;
+        }
+
+        .pricingTable.purpleHaze .heading{
+            color: #bbb3e9;
+            font-weight: bolder;
+        }
+
+        .pricingTable.purpleHaze .pricingTable-signup a, .pricingTable.purpleHaze:hover .pricingTable-header{
+            background-color: #bbb3e9;
+        }
+    </style>
+</head>
+<body>
+    <h1>WEB HOSTING PRICES</h1>
+    <div class="demo">
+        <div class="container grid">
+            <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="pricingTable rosewater">
+                    <div class="pricingTable-header">
+                        <div class="price-value">$10.00 <span class="month"> per month</span></div>
+                    </div>
+                    <h3 class="heading">STANDARD</h3>
+                    <div class="pricing-content">
+                        <ul>
+                            <li><b>50GB</b> Disk Space</li>
+                            <li><b>50</b> Email Accounts</li>
+                            <li><b>50GB</b> Monthly Bandwidth</li>
+                            <li><b>10</b> subdomains</li>
+                            <li><b>15</b> Domains</li>
+                        </ul>
+                    </div>
+                    <div class="pricingTable-signup">
+                        <a href="#">SIGNUP</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-3 col-sm-6">
+                <div class="pricingTable Lavender">
+                    <div class="pricingTable-header">
+                        <div class="price-value">$20.00 <span class="month">per month</span></div>
+                    </div>
+                    <h3 class="heading">BUSINESS</h3>
+                    <div class="pricing-content">
+                        <ul>
+                            <li><b>60GB</b> Disk Space</li>
+                            <li><b>60</b> Email Accounts</li>
+                            <li><b>60GB</b> Monthly Bandwidth</li>
+                            <li><b>15</b> subdomains</li>
+                            <li><b>20</b> Domains</li>
+                        </ul>
+                    </div>
+                    <div class="pricingTable-signup">
+                        <a href="#">SIGNUP</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="pricingTable periwinkle">
+                    <div class="pricingTable-header">
+                        <div class="price-value">$30.00 <span class="month">per month</span></div>
+                    </div>
+                    <h3 class="heading">PREMIUM</h3>
+                    <div class="pricing-content">
+                        <ul>
+                            <li><b>70GB</b> Disk Space</li>
+                            <li><b>70</b> Email Accounts</li>
+                            <li><b>70GB</b> Monthly Bandwidth</li>
+                            <li><b>20</b> subdomains</li>
+                            <li><b>25</b> Domains</li>
+                        </ul>
+                    </div>
+                    <div class="pricingTable-signup">
+                        <a href="#">SIGNUP</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="pricingTable purpleHaze">
+                    <div class="pricingTable-header">
+                        <div class="price-value">$40.00 <span class="month">per month</span></div>
+                    </div>
+                    <h3 class="heading">EXTRA</h3>
+                    <div class="pricing-content">
+                        <ul>
+                            <li><b>80GB</b> Disk Space</li>
+                            <li><b>80</b> Email Accounts</li>
+                            <li><b>80GB</b> Monthly Bandwidth</li>
+                            <li><b>25</b> subdomains</li>
+                            <li><b>30</b> Domains</li>
+                        </ul>
+                    </div>
+                    <div class="pricingTable-signup">
+                        <a href="#">SIGNUP</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
